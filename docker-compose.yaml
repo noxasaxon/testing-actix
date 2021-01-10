@@ -1,0 +1,21 @@
+version: "3.1"
+
+services:
+  testing_actix:
+    build: .
+    ports:
+      # - "80:80"
+      - "5000:5000"
+      # - "80:5000"
+      # - "8080:8080"
+    # secrets:
+    #   - some_secret
+    #   - slack_signing_secret
+      # - aws_credentials
+    # environment:
+    #   SOME_SECRET: /run/secrets/some_secret
+      # ENVIRONMENT: local
+
+# secrets:
+#   some_secret:
+#     file: secrets/some_secret
